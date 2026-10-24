@@ -1,7 +1,7 @@
 {
   "name": "dsh-secure-push-guard",
   "version": "0.1.0",
-  "description": "推送前强制安检的事前硬门控：拦截 git push 命令，检查本会话本轮是否已调 secret-scan skill，没调就弹窗人工放行。",
+  "description": "DSH 插件：git push 前要求已跑 secret-scan 安检、且未直接读 token 文件，未满足弹确认框。",
   "type": "module",
   "main": "lib/index.js",
   "exports": {

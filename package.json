@@ -1,0 +1,23 @@
+{
+  "name": "dsh-secure-push-guard",
+  "version": "0.1.0",
+  "description": "推送前强制安检的事前硬门控：拦截 git push 命令，检查本会话本轮是否已调 secret-scan skill，没调就弹窗人工放行。",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./cordis.patch.yml": "./cordis.patch.yml"
+  },
+  "files": ["lib", "cordis.patch.yml"],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "compatibility": {
+      "dsh": "^0.1.5-rc.2",
+      "dshReleases": {
+        "0.1.5-rc.2": "compatible"
+      }
+    }
+  }
+}

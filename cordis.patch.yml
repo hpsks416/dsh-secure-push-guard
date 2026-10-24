@@ -1,0 +1,4 @@
+# dsh-secure-push-guard bundle patch: mount this package as one composition row.
+- insert:
+    - id: secure-push-guard
+      name: 'dsh-secure-push-guard'
